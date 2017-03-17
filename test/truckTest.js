@@ -7,6 +7,12 @@ var Truck = require('../src/Truck');
 var Car = require('../src/Car');
 
 // Your tests will go below here
+
+//test instance
+assert.strictEqual(myTruck instanceof Truck, true, 'This truck is not an instance of Truck.')
+assert.strictEqual(myTruck instanceof Car, true, 'This truck is not an instance of Car.')
+success();
+
 // test constructor
 console.log('Testing Constructor');
 var myTruck = new Truck ('Acura', 'Integra', 1999, 'Red', ['Catto', 'Doggo']);
